@@ -1,0 +1,111 @@
+:root{
+    --bgcolor :#3B4664;
+    --disp_div:#181F32;
+    --equalto :#D13F30;
+    --defcol  :#FFF;
+    --nobox   :#252D44;
+}
+body{
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calboxmain{
+    display: flex;
+    flex-direction:column;
+    /* border:1px solid rgba(0, 255, 13, 0.708); */
+    justify-content:space-around;
+    align-items: stretch;
+    height: 60vh;
+    width: 30rem;
+}
+.box{
+    border:1px ;
+    border-radius: 0.4rem;
+    margin-bottom:1vh;
+}
+#firstbox {
+    
+    display: flex;
+    border-color: #ff00;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-bottom: 1vh; /* Reset margin */
+}
+#firstbox p{
+    color: #FFF;
+    font-family: Inter;
+    margin: 0;
+   /* border: 1px solid yellow;*/
+}
+#secondbox{
+    box-shadow:  -1px 2px 2px 2px #07070736;
+    background: #181F32;
+    display: flex;
+    height:20%;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+    
+}
+#secondbox p{
+opacity: 0.5;
+color: #FFF;
+font-family: Segoe UI;
+font-size: 7vh;
+font-weight: 700;
+padding: 1vh;
+margin: 0;
+/* border: 1px solid yellow; */
+}
+#outerb{
+    display: flex;
+    /* border: 1px solid white; */
+    background-color: var(--nobox);
+    
+    flex-grow:24;
+    padding: 1%;    
+}
+#outerb #thirdbox{
+    /* border: 1px solid red; */
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;    
+}
+#thirdbox button{
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 3vh;
+    height: 5vh;
+    width: 100%;
+    margin:  0.1px;
+    font-weight: bolder;
+    color: var(--bgcolor);
+    flex-basis: 20%;
+    align-items: baseline;
+    border:0px;
+    border-radius: 0.4rem;
+    
+}
+#thirdbox #reset,#thirdbox #resp{
+    flex-basis: calc(50% - 10px);
+    }
+#thirdbox #reset,#thirdbox #del{
+    background-color: #647299;
+    color: var(--defcol);
+}
+#thirdbox #resp{
+    background-color: #D13F30;
+    color: var(--defcol);
+}
+button:hover {background-color: #ffffff}
+
+button:active {
+  background-color: rgba(255, 255, 255, 0.737);
+  box-shadow:  -1px 2px 2px 2px #07070736;
+  transform: translateY(4px);
+}
